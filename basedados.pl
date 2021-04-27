@@ -2,7 +2,38 @@
 solucao()
 
 % carnivora %
+solucao('carnivora1',['\n Bruschetta de tomates
+                   \n A clássica bruschetta de tomates tem um gostinho especial da Itália e é fácil de fazer.
+                   \n Perfeita para abrir o apetite antes do jantar.']
+                 ['\n Sopa de cebola
+                   \n Prato clássico francês.
+                   \n Perfeita para ser servida no inverno.']).
 
+solucao('carnivora2',['\n Tartare de salmão cozido
+                   \n Prato originário dos Tártaros, grupo étnico que habita a Rússia e países vizinhos.
+                   \n A mistura do toque picante e adocicado da geleia de pimenta com o azedinho do cottage se afinam super bem com o salmão.']
+                 ['\n Palitos de beringela
+                   \n Super delicioso para acompanhar uma refeição, para substituir as famosas batatas fritas do cheeseburguer ou ainda como uma entrada servida com uma massa ou molho cremoso']).
+
+solucao('carnivora3',['\n Sopa fria de tomate
+                   \n É entrada para qualquer celebração, faça sol ou faça chuva, já que fica bem com qualquer prato que venha a seguir']
+                 ['\n Gaspacho à alentejana
+                   \n O gaspacho à alentejana é um dos pratos típicos da região. Um prato fresco para servir nos dias quentes, uma ideia excelente para começar um almoço de amigos']). 
+
+solucao('carnivora4',['\n Cannelloni Gratinado de Presunto Parma, Pesto e Mussarela de Búfala
+                   \n Esta deliciosa receita de Cannelloni sem glúten preparada com a massa de lasanha seca é absolutamente deliciosa.']
+                 ['\n Lasanha de Bacalhau com Molho Branco
+                   \n O prato perfeito para reunir a família ao redor da mesa: lasanha de bacalhau sem glúten com molho branco!']).
+
+solucao('carnivora5',['\n  Prego no Prato
+                   \n Tradicional da cozinha portuguesa, cuja receita é muito prática e simples']
+                 ['\n Cozido à portuguesa
+                   \n Um cozido tradicional para amantes de carne, este prato inclui frango, carne de vaca, porco e várias salsichas de porco.']).
+
+solucao('carnivora6',['\n Francesinha
+                   \n Típica da cidade do Porto é uma versão rebelde do Croque Monsieur francês, o que parece justificar o seu nome fantástico sabor.']
+                 ['\n Caldeirada de peixe
+                   \n Contém vários tipos de peixe e marisco, coberto de tomates e ervas aromáticas. O jantar ideal após um longo dia de praia.']).                    
 
 % vegetariana %
 
