@@ -33,9 +33,48 @@ solucao('carnivora5',['\n  Prego no Prato
 solucao('carnivora6',['\n Francesinha
                    \n Típica da cidade do Porto é uma versão rebelde do Croque Monsieur francês, o que parece justificar o seu nome fantástico sabor.']
                  ['\n Caldeirada de peixe
-                   \n Contém vários tipos de peixe e marisco, coberto de tomates e ervas aromáticas. O jantar ideal após um longo dia de praia.']).                    
+                   \n Contém vários tipos de peixe e marisco, coberto de tomates e ervas aromáticas. O jantar ideal após um longo dia de praia.']).
 
+solucao('carnivora7',['\n Bolo de ananás com nozes
+                   \n Receita fácil e prática.
+                   \n Perfeita para servir ao fim de um almoço ou jantar.']
+                 ['\n Bolo de iogurte sem glúten
+                   \n Super delicioso']).
+
+solucao('carnivora8',['\n Pudim sem lactose
+                   \n Receita deliciosamente cremosa.]
+                 ['\n Brigadeiros sem lactose
+                   \n Fácil de se fazer']).
+
+solucao('carnivora9',['\n Bolo de bolacha
+                   \n Clássico das sobremesas.
+                   \n Perfeita para o final de um almoço de domingo.']
+                 ['\n Cheesecake de morango
+                   \n Receita deliciosa que nenhum convidado recusa']).
+                   
 % vegetariana %
+
+solucao('vegetariana1',['\n Pataniscas de Legumes
+                   \n Muito fácil de fazer e leva apenas 6 ingredientes.
+                   \n Perfeita para abrir o apetite antes de um almoço ou jantar.']
+                 ['\n Hummus de Abóbora
+                   \n Receita rápida, fácil e deliciosa.
+                   \n Perfeito para ser servido no Natal.']).
+                   
+solucao('vegetariana2',['\n Queijo vegetariano de amêndoa
+                   \n Boa para servir em tempos Natalícios.
+                   \n ótimo para barrar.']
+                 ['\n Hummus de feijão branco picante
+                   \n ótima entrada para qualquer refeição
+                   \n Perfeito para quem é alérgico à lactose.']).
+
+solucao('vegetariana3',['\n Pasta de sementes de Girassol
+                   \n Saudável, fácil de fazer e súper deliciosa.
+                   \n Perfeita para servir com pães, frios e queijos.']
+                 ['\n Chamuças Vegetarianas
+                   \n Prato tipicamente indiano.
+                   \n Perfeito para ser servido aos seus convidados.']).
+              
 
 
 % vegan (helena) %
