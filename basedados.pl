@@ -75,20 +75,20 @@ solucao('vegetariana3',['\n Pasta de sementes de Girassol
                    \n Prato tipicamente indiano.
                    \n Perfeito para ser servido aos seus convidados.']).
 
-solucao('vegetariana4',['\n Croquetes vegetais 
-                   \n Acompanhados com salada marroquina.']
-                 ['\n Lasanha vegetariana
+solucao('vegetariana4',['\n Falafel de forno 
+                   \n Bolinhos de grão de bico deliciosos.']
+                 ['\n Lasanha de courgette vegetariana sem gluten
                    \n Prato rico em vitaminas e minerais.']).
 
-solucao('vegetariana5',['\n Tortellini de espinafres
-                   \n Uma deliciosa refeição para toda a família.']
+solucao('vegetariana5',['\n Abóbora recheada com legumes e quinoa
+                   \n Clássica e deliciosa.']
                  ['\n Caril de lentilhas
                    \n Prato delicios e nutritivo.']). 
 
 solucao('vegetariana6',['\n Massa com vegetais grelhados
                    \n Refeição leve e nutritiva.']
-                 ['\n Abóbora recheada com legumes e quinoa
-                   \n Clássica e deliciosa.']). 
+                 ['\n Tortellini de espinafres
+                   \n Uma deliciosa refeição para toda a família.']). 
 
 solucao('vegetariana7',['\n Gelatina de frutos silvestres com hortelã
                    \n Sobremesa ideal para o verão.']
