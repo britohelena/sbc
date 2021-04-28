@@ -42,7 +42,7 @@ solucao('carnivora7',['\n Bolo de ananás com nozes
                    \n Super delicioso']).
 
 solucao('carnivora8',['\n Pudim sem lactose
-                   \n Receita deliciosamente cremosa.]
+                   \n Receita deliciosamente cremosa.']
                  ['\n Brigadeiros sem lactose
                    \n Fácil de se fazer']).
 
@@ -74,8 +74,36 @@ solucao('vegetariana3',['\n Pasta de sementes de Girassol
                  ['\n Chamuças Vegetarianas
                    \n Prato tipicamente indiano.
                    \n Perfeito para ser servido aos seus convidados.']).
-              
 
+solucao('vegetariana4',['\n Croquetes vegetais 
+                   \n Acompanhados com salada marroquina.']
+                 ['\n Lasanha vegetariana
+                   \n Prato rico em vitaminas e minerais.']).
+
+solucao('vegetariana5',['\n Tortellini de espinafres
+                   \n Uma deliciosa refeição para toda a família.']
+                 ['\n Caril de lentilhas
+                   \n Prato delicios e nutritivo.']). 
+
+solucao('vegetariana6',['\n Massa com vegetais grelhados
+                   \n Refeição leve e nutritiva.']
+                 ['\n Abóbora recheada com legumes e quinoa
+                   \n Clássica e deliciosa.']). 
+
+solucao('vegetariana7',['\n Gelatina de frutos silvestres com hortelã
+                   \n Sobremesa ideal para o verão.']
+                 ['\n Gelado de kiwi e melancia com mel
+                   \n Melhor forma de se refrescar num dia quente de verão.']). 
+
+solucao('vegetariana8',['\n Crumble de maçã
+                   \n Sobremesa muito saborosa.']
+                 ['\n Pudim de chia
+                   \n Acompanhado com fruta fresca.']). 
+
+solucao('vegetariana9',['\n Mousse de chocolate vegetariana
+                   \n Saudável e com todo o sabor da mousse tradicional.']
+                 ['\n Tarte de abóbora
+                   \n Deliciosa e com sabores natalícios.']).
 
 % vegan (helena) %
 
@@ -125,5 +153,3 @@ solucao('vegan9',['\n Cookies vegan de coco e canela
                    \n Perfeito para quando se tem a vontade de algo doce.']
                  ['\n Petit Gateau vegan
                    \n Delicioso e vai impressionar toda a gente!']). 
-
-
