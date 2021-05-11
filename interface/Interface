@@ -1,0 +1,81 @@
+:-dynamic(fact/1),
+[forward, basedados, proof, baseconhecimento].
+
+menu:- nl,nl , 	write('********************************************************************************************************'), nl,
+				write('           Seja bem vindo! Antes de começarmos, qual é o seu nome?'),nl,
+				read(X) ,nl,
+				write('********************************************************************************************************'), nl,nl,
+				write('  Muito prazer em estar a ajuda-lo/a Sr./a '), write(X) ,nl,nl,nl,
+				write('********************************************************************************************************'), nl,
+				write('**                                                                                                    **'), nl,			 
+				write('**                          Descubra qual/quais o/s melhor/es solução/ões culinárias para si!                        **'), nl,
+				write('**                      Iremos faremos algumas perguntas para o/a ajudar na sua escolha!                     **'), nl, 
+				write('**                                                                                                    **'), nl,			 
+				write('********************************************************************************************************'), nl,
+				write('**   Menu:'), nl,
+				write('**'), nl,
+				write('**   1- Iniciar'), nl,
+				write('**   2- Sair'), nl,nl,
+				read(Y),
+				avaliarEscolha(Y).
+
+avaliarEscolha(1):- questao1.
+avaliarEscolha(2):- write('Foi um prazer ajuda-lo!'), halt.
+avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de novo'), menu.
+
+questao1:-	write('********************************************************************************************************'), nl,
+			write('**  Gostaria de pesquisar por tipo de prato?'), nl,
+			write('**'),nl,
+			write('**  1 - Sim'), nl,
+			write('**  2 - Nao'), nl,nl,
+			read(A1),
+			(
+			(A1 == 1),assert(fact(ator)), questao2;
+            (A1 == 2),  questao3).
+
+questao2:-	write('********************************************************************************************************'), nl,
+			write('**  Que tipo de prato prefere?'), nl,
+      write('**  1 - Vegetariano'), nl,
+			write('**  2 - Carnívoro'), nl, 
+			write('**  3 - Vegan'),nl,
+			write('**'),nl,nl,
+			read(A4),assert(variavel(A4)),resultado.
+			
+questao3:-	write('********************************************************************************************************'), nl,
+			write('**  É alérgico a alguma destas opções? Das seguintes, introduza o numero correspondente:'), nl,
+			write('**'),nl,
+			write('**  1 - Lactose'), nl,
+			write('**  2 - Glúten'), nl, 
+			write('**  3 - Nenhuma'),nl,
+			read(A3),
+			(
+			(A3 == 1), assert(fact(Lactose)), questao4;
+            (A3 == 2), assert(fact(Glúten)), questao4;
+            (A3 == 3), assert(fact(Nenhuma)), questao4;
+            
+			
+
+questao4:- 	write('********************************************************************************************************'), nl,
+			write('**  Que tipo de refeição é que vai tomar?'), nl, 
+      write('**  1 - Pequeno-Almoço'), nl,
+			write('**  2 - Almoço'), nl, 
+			write('**  3 - Jantar'),nl,
+			write('**'),nl,nl,			
+			read(A4), assert(variavel(A4)),
+			questao5.
+			
+			
+			
+resultado :- 	write('********************************************************************************************************'), nl,
+				write('**                                                                                                    **'), nl,			 
+				write('**                                         Resultado Obtido                                           **'), nl, 
+				write('**                                                                                                    **'), nl,			 
+				write('********************************************************************************************************'),
+				result.
+
+resultadowrite(P):-	variavel(A4),nl,
+					write('     O seu perfil e o'),nl,
+					write('     *** '),write(P),write(' ***'),nl,nl,
+					write('     Pratos aconselhados: '),perfil(P,A4),nl,nl,
+					write('********************************************************************************************************'),
+					retract(variavel(A4)), retractall(fact(_)).
