@@ -1,27 +1,27 @@
-if (dieta = vegetariana) and (tipo = sobremesa) and (alergia = gluten) then (solucao=vegetariana7).
-if (dieta = carnivora) and (tipo = entrada) and (alergia = nenhuma) then (solucao=carnivora3).
-if (dieta = vegetariana) and (alergia = gluten) and (tipo = entrada) then (solucao=vegetariana1).
-if (dieta = vegetariana) and (tipo = entrada) and (alergia = lactose) then (solucao=vegetariana2).
-if (alergia = gluten) and (tipo = sobremesa) and (dieta = carnivora) then (solucao=carnivora7).
-if (alergia = gluten) and (dieta = vegan) and (tipo = principal) then (solucao=vegan4).
-if (dieta = carnivora) and (alergia = nenhuma) and (tipo = principal) then (solucao=carnivora6).
-if (tipo = sobremesa) and (dieta = vegan) and (alergia = lactose) then (solucao=vegan8).
-if (alergia = gluten) and (dieta = vegan) and (tipo = entrada) then (solucao=vegan1).
-if (tipo = entrada) and (dieta = vegetariana) then (solucao=vegetariana3).
-if (alergia = gluten) and (dieta = vegan) then (solucao=vegan7).
-if (dieta = vegan) and (tipo = principal) and (alergia = nenhuma) then (solucao=vegan6).
-if (tipo = sobremesa) and (dieta = carnivora) and (alergia = lactose) then (solucao=carnivora8).
-if (dieta = vegan) and (tipo = entrada) and (alergia = nenhuma) then (solucao=vegan3).
-if (alergia = nenhuma) and (tipo = principal) then (solucao=vegetariana6).
-if (dieta = vegan) and (tipo = principal) then (solucao=vegan5).
-if (tipo = principal) and (dieta = carnivora) and (alergia = lactose) then (solucao=carnivora5).
-if (dieta = vegan) and (tipo = sobremesa) then (solucao=vegan9).
-if (tipo = sobremesa) and (alergia = lactose) then (solucao=vegetariana8).
-if (tipo = sobremesa) and (dieta = vegetariana) then (solucao=vegetariana9).
-if (tipo = sobremesa) then (solucao=carnivora9).
-if (dieta = carnivora) and (tipo = principal) then (solucao=carnivora4).
-if (dieta = carnivora) and (alergia = lactose) then (solucao=carnivora2).
-if (dieta = vegetariana) and (alergia = gluten) then (solucao=vegetariana4).
-if (dieta = vegan) then (solucao=vegan2).
-if (dieta = vegetariana) then (solucao=vegetariana5).
-if then (solucao=carnivora1).
+if vegetariana and sobremesa and gluten then vegetariana7.
+if carnivora and entrada and nenhuma then carnivora3.
+if vegetariana and gluten and entrada then vegetariana1.
+if vegetariana and entrada and lactose then vegetariana2.
+if gluten and sobremesa and carnivora then carnivora7.
+if gluten and vegan and principal then vegan4.
+if carnivora and nenhuma and principal then carnivora6.
+if sobremesa and vegan and lactose then vegan8.
+if gluten and vegan and entrada then vegan1.
+if entrada and vegetariana then vegetariana3.
+if gluten and vegan then vegan7.
+if vegan and principal and nenhuma then vegan6.
+if sobremesa and carnivora and lactose then carnivora8.
+if vegan and entrada and nenhuma then vegan3.
+if nenhuma and principal then vegetariana6.
+if vegan and principal then vegan5.
+if principal and carnivora and lactose then carnivora5.
+if vegan and sobremesa then vegan9.
+if sobremesa and lactose then vegetariana8.
+if sobremesa and vegetariana then vegetariana9.
+if sobremesa then carnivora9.
+if carnivora and principal then carnivora4.
+if carnivora and lactose then carnivora2.
+if vegetariana and gluten then vegetariana4.
+if vegan then vegan2.
+if vegetariana then vegetariana5.
+if then carnivora1.
