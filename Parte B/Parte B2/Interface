@@ -24,27 +24,32 @@ avaliarEscolha(2):- write('Foi um prazer ajuda-lo!'), halt.
 avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de novo'), menu.
 
 questao1:-	write('********************************************************************************************************'), nl,
-			write('**  Que tipo de fator quer privelegiar?'), nl,
+			write('**  Qual o maximo de encomendas que pode levar?'), nl,
 			write('**'),nl,
-			write('**  1 - lucro'), nl,
-			write('**  2 - tempo'), nl,nl,
+			write('**  1 - 1encomenda'), nl,
+			write('**  2 - 2encomendas'), nl,nl,
 			read(A4),
 			(
-			(A4 == 1), assert(fact(lucro)), questao2;
-            		(A4 == 2), assert(fact(tempo)), questao2;
-            (A4 == 3), assert(fact(vegan)), questao2).
+			(A4 == 1), assert(fact(1encomenda)), questao2;
+            		(A4 == 2), assert(fact(2encomendas)), questao2.
+           
 
 questao2:-	write('********************************************************************************************************'), nl,
-			write('**  Que tipo de prato vai tomar?'), nl,
+			write('**  A que cliente vai entregar a primeira encomenda?'), nl,
 			write('**'),nl,
-			write('**  1 - entrada'), nl,
-			write('**  2 - principal'), nl, 
-			write('**  3 - sobremesa'),nl,
+			write('**  1 - cliente1'), nl,
+			write('**  2 - cliente2'), nl, 
+			write('**  3 - cliente3'),nl,
+			write('**  4 - cliente4'), nl,
+			write('**  5 - cliente5'), nl,
+			
 			read(A5),
 			(
-			(A5 == 1), assert(fact(entrada)), questao3;
-            (A5 == 2), assert(fact(principal)), questao3;
-            (A5 == 3), assert(fact(sobremesa)), questao3).
+			(A5 == 1), assert(fact(cliente1)), questao3;
+            (A5 == 2), assert(fact(cliente2)), questao3;
+            (A5 == 3), assert(fact(cliente3)), questao3);
+	    (A5 == 4), assert(fact(cliente4)), questao3);
+	    (A5 == 5), assert(fact(cliente5)), questao3).
 			
 questao3:- 	write('********************************************************************************************************'), nl,
 			write('**  Tem alguma alergia? Das seguintes, introduza a correspondente:'), nl, 
