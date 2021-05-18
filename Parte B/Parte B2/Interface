@@ -24,15 +24,14 @@ avaliarEscolha(2):- write('Foi um prazer ajuda-lo!'), halt.
 avaliarEscolha(other):- write('Introduza uma opcao valida, por favor comece de novo'), menu.
 
 questao1:-	write('********************************************************************************************************'), nl,
-			write('**  Que tipo de dieta leva?'), nl,
+			write('**  Que tipo de fator quer privelegiar?'), nl,
 			write('**'),nl,
-			write('**  1 - Carnivora'), nl,
-			write('**  2 - Vegetariana'), nl,
-            write('**  3 - Vegan'), nl,nl,
+			write('**  1 - lucro'), nl,
+			write('**  2 - tempo'), nl,nl,
 			read(A4),
 			(
-			(A4 == 1), assert(fact(carnivora)), questao2;
-            (A4 == 2), assert(fact(vegetariana)), questao2;
+			(A4 == 1), assert(fact(lucro)), questao2;
+            		(A4 == 2), assert(fact(tempo)), questao2;
             (A4 == 3), assert(fact(vegan)), questao2).
 
 questao2:-	write('********************************************************************************************************'), nl,
