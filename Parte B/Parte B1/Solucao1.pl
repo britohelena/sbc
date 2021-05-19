@@ -20,8 +20,8 @@ road(cliente3,cliente4,4).
 
 %lucro(cliente, lucro)
 lucro(cliente1, 5).
-lucro(cliente2, 10).
-lucro(cliente3, 3).
+lucro(cliente2, 6).
+lucro(cliente3, 7).
 lucro(cliente4, 16).
 lucro(cliente5, 4).
 
