@@ -22,13 +22,13 @@ road(cliente3,cliente4,4).
 lucro(cliente1, 5).
 lucro(cliente2, 10).
 lucro(cliente3, 3).
-lucro(cliente4, 10).
-lucro(cliente5, 3).
-
+lucro(cliente4, 16).
+lucro(cliente5, 4).
 
 %LucroCaminho
 lucroCaminho([],0).
 lucroCaminho([X|R],Soma) :- lucro(X,TotalCliente), lucroCaminho(R,TotalCaminho), Soma is TotalCliente + TotalCaminho.
+
 /*travel(City1,City2,distance):*/
 travel(X,Y,KM):-(road(X,Y,KM);road(Y,X,KM)). /* true if road or symmetrical*/
 
