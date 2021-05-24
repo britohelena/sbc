@@ -1,7 +1,6 @@
 :-[search].
 
-/*% -- database:
-%   simple state representation: S, where S is a city*/
+/*% -- database:*/
 initial(restaurante). /*initial city*/
 goal(cliente4). /*destination city*/
 
@@ -29,10 +28,10 @@ lucro(cliente5, 4).
 lucroCaminho([],0).
 lucroCaminho([X|R],Soma) :- lucro(X,TotalCliente), lucroCaminho(R,TotalCaminho), Soma is TotalCliente + TotalCaminho.
 
-/*travel(City1,City2,distance):*/
+/*travel(partida,chegada,distancia):*/
 travel(X,Y,KM):-(road(X,Y,KM);road(Y,X,KM)). /* true if road or symmetrical*/
 
-/*state transition rule s/2: s(City1,City2)*/
+/*state transition rule s/2: s(clientex,clientey)*/
 s(N1,N2):- travel(N1,N2,_). /*link s(O,D,Dist) with s(O,D)*/
 
 /* evaluation function: (sum of distances for all pairs)
