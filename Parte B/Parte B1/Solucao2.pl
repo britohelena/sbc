@@ -6,18 +6,27 @@ initial([porto]). % initial city
 
 goal(X):- member(guimaraes,X),member(famalicao,X). % destination city
 
-% --- knowledge base:
-% road(Origin,Destination,Distance-in-km)
-% data collected from: https://pt.distance.to/
-road(porto,povoavarzim,37).
-road(povoavarzim,barcelos,24).
-road(povoavarzim,famalicao,30).
-road(barcelos,braga,25).
-road(barcelos,famalicao,23).
-road(famalicao,porto,36).
-road(famalicao,braga,24).
-road(braga,guimaraes,25).
-road(famalicao,guimaraes,29).
+road(restaurante,cliente1,5).
+road(restaurante,cliente4,7).
+road(cliente1,cliente4,5).
+road(cliente1,cliente2,5).
+road(cliente1,cliente5,5).
+road(cliente4,cliente2,2).
+road(cliente2,cliente5,2).
+road(cliente2,cliente3,3).
+road(cliente5,cliente3,5).
+road(cliente3,cliente4,4).
+
+%lucro(cliente, lucro)
+lucro(cliente1, 5).
+lucro(cliente2, 6).
+lucro(cliente3, 7).
+lucro(cliente4, 16).
+lucro(cliente5, 4).
+
+%LucroCaminho
+lucroCaminho([],0).
+lucroCaminho([X|R],Soma) :- lucro(X,TotalCliente), lucroCaminho(R,TotalCaminho), Soma is TotalCliente + TotalCaminho.
 
 % travel(City1,City2,distance):
 travel(X,Y,KM):-(road(X,Y,KM);road(Y,X,KM)). % true if road or symmetrical
