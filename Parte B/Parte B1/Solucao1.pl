@@ -1,9 +1,9 @@
 :-[search].
 
 /*% -- database:
-%   simple state representation: S, where S is a city
-initial(restaurante). % initial city
-goal(guimaraes). % destination city*/
+%   simple state representation: S, where S is a city*/
+initial(restaurante). /*initial city*/
+goal(cliente4). /*destination city*/
 
 /*--- knowledge base:
 % road(origem,destino, tempo)*/
@@ -18,22 +18,22 @@ road(cliente2,cliente3,3).
 road(cliente5,cliente3,5).
 road(cliente3,cliente4,4).
 
-%lucro(cliente, lucro)
+/*% lucro(cliente, lucro)*/
 lucro(cliente1, 5).
 lucro(cliente2, 6).
 lucro(cliente3, 7).
 lucro(cliente4, 16).
 lucro(cliente5, 4).
 
-%LucroCaminho
+/*LucroCaminho*/
 lucroCaminho([],0).
 lucroCaminho([X|R],Soma) :- lucro(X,TotalCliente), lucroCaminho(R,TotalCaminho), Soma is TotalCliente + TotalCaminho.
 
 /*travel(City1,City2,distance):*/
 travel(X,Y,KM):-(road(X,Y,KM);road(Y,X,KM)). /* true if road or symmetrical*/
 
-/* state transition rule s/2: s(City1,City2)*/
-s(N1,N2):- travel(N1,N2,_). //link s(O,D,Dist) with s(O,D)
+/*state transition rule s/2: s(City1,City2)*/
+s(N1,N2):- travel(N1,N2,_). /*link s(O,D,Dist) with s(O,D)*/
 
 /* evaluation function: (sum of distances for all pairs)
 eval([_],0).
