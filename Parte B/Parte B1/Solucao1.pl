@@ -1,4 +1,5 @@
-:-[search].
+:-[search], dynamic goal/1.
+
 
 /*% -- database:*/
 initial(restaurante). /*initial city*/
