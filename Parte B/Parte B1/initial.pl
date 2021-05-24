@@ -1,8 +1,8 @@
 :-[search].
 % -- database:
-% simple state representation: S, where S is a city
-initial(porto). % initial city
-goal(guimaraes). % destination city
+% simple state representation: C, where C is a client
+initial(restaurant). % initial client
+goal(client3). % destination client
 % --- knowledge base:
 % road(Origin,Destination,Distance-in-km)
 % data collected from: https://pt.distance.to/
