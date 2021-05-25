@@ -62,7 +62,7 @@ change(S1,L,L,S2):- % P1 is L
 	replace_list(S12,1,City2,S2). % last
 
 % initial solution: lets start with a bad solution:
-initial([restaurante,cliente1,cliente2,cliente4,cliente3]).
+initial([restaurante,cliente1,cliente2]).
 
 :- set_random(seed(12345)). % set initial random seed
 
