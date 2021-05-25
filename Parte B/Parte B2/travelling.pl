@@ -1,9 +1,9 @@
-% traveling salesman problem (TSP): minimize distance to visit all cities
+% traveling salesman problem (TSP): minimize distance to visit all clients
 :-[auxiliar,hill].
 
 % north cost region of Portugal:
-% driving distance (in km), from: https://pt.distance.to
-dist(cliente1,cliente2,36.99).
+% driving distance (in min), from: https://pt.distance.to
+dist(cliente1,cliente2,5).
 dist(cliente1,cliente3,35.8).
 dist(cliente1,cliente4,59.61).
 dist(cliente1,cliente5,55.74).
