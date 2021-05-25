@@ -1,8 +1,9 @@
-:-[search].
+:-[search]
+:- dynamic (goal/1).
 
 % -- database:
 %   state representation: S, where S is a list with the full path followed by the person 
-initial([porto]). % initial city
+initial([restaurante]). % initial city
 
 goal(X):- member(guimaraes,X),member(famalicao,X). % destination city
 
@@ -23,10 +24,6 @@ lucro(cliente2, 6).
 lucro(cliente3, 7).
 lucro(cliente4, 16).
 lucro(cliente5, 4).
-
-%LucroCaminho
-lucroCaminho([],0).
-lucroCaminho([X|R],Soma) :- lucro(X,TotalCliente), lucroCaminho(R,TotalCaminho), Soma is TotalCliente + TotalCaminho.
 
 % travel(City1,City2,distance):
 travel(X,Y,KM):-(road(X,Y,KM);road(Y,X,KM)). % true if road or symmetrical
