@@ -1,5 +1,5 @@
 :-dynamic(fact/1),
-[depthfirst, Solucao1, Solucao2, breadthfirst].
+[Solucao1,depthfirst, Solucao2, breadthfirst].
 
 menu:- nl,nl , 	write('********************************************************************************************************'), nl,
 				write('           Seja Bem vindo! Antes de iniciar, qual o seu nome?'),nl,
