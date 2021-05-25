@@ -92,8 +92,9 @@ resultado :- 	write('***********************************************************
 				result.
 
 resultadowrite(P):-	fact(A6),nl,
-					write('     A melhor rota e a'),nl,
-					write('     *** '),write(P),write(' ***'),nl,nl,
-					write('     Rotas possíveis: '),perfil(P),nl,nl,
+					write('     A rota e '),write(S),write(' ***'),nl,
+					write('     Tem: '),write(N1),write(' steps'), nl,
+					write('     Distancia: '),write(D),nl,
+					write('     Lucro: '),write(L),nl,
 					write('********************************************************************************************************'),
 					retractall(fact(_)).
