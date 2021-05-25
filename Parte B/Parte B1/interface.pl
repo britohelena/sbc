@@ -31,7 +31,7 @@ questao1:-	write('**************************************************************
 			read(A4),
 			(
 			(A4 == 1), assert(fact(1Encomenda)), questao2;
-            (A4 == 2), assert(fact(2Encomendas)), questao2.
+            (A4 == 2), assert(fact(2Encomendas)), questao4.
             
 
 questao2:-	write('********************************************************************************************************'), nl,
@@ -42,6 +42,27 @@ questao2:-	write('**************************************************************
 			write('**  3 - Cliente3'),nl,
 			write('**  4 - Cliente4'),nl,
 			write('**  5 - Cliente5'),nl,
+			read(A5),
+			(
+			(A5 == 1), assert(fact(Cliente1)), resultado;
+            (A5 == 2), assert(fact(Cliente2)), questao3;
+	    (A5 == 3), assert(fact(Cliente3)), questao3;
+	    (A5 == 4), assert(fact(Cliente4)), questao3;
+            (A5 == 5), assert(fact(Cliente5)), questao3.
+	 
+questao4:-	write('********************************************************************************************************'), nl,
+			write('**  Quais são os seus destinos?'), nl,
+			write('**'),nl,
+			write('**  1 - Cliente1 e Cliente2'), nl,
+			write('**  2 - Cliente1 e Cliente3'), nl, 
+			write('**  3 - Cliente1 e Cliente4'),nl,
+			write('**  4 - Cliente1 e Cliente5'),nl,
+			write('**  5 - Cliente2 e Cliente3'),nl,
+			write('**  6 - Cliente2 e Cliente4'),nl,
+			write('**  7 - Cliente2 e Cliente5'),nl,
+			write('**  8 - Cliente3 e Cliente4'),nl,
+			write('**  9 - Cliente3 e Cliente5'),nl,
+			write('**  10 - Cliente4 e Cliente5'),nl,
 			read(A5),
 			(
 			(A5 == 1), assert(fact(Cliente1)), resultado;
@@ -71,7 +92,7 @@ resultado :- 	write('***********************************************************
 				result.
 
 resultadowrite(P):-	fact(A6),nl,
-					write('     O seu perfil e o'),nl,
+					write('     A melhor rota e a'),nl,
 					write('     *** '),write(P),write(' ***'),nl,nl,
 					write('     Rotas possíveis: '),perfil(P),nl,nl,
 					write('********************************************************************************************************'),
