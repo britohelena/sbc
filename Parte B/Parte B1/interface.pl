@@ -45,22 +45,22 @@ questao2:-	write('**************************************************************
 			read(A5),
 			(
 			(A5 == 1), assert(fact(Cliente1)), resultado;
-            (A5 == 2), assert(fact(Cliente2)), resultado;
-	    (A5 == 3), assert(fact(Cliente3)), resultado;
-	    (A5 == 4), assert(fact(Cliente4)), resultado;
-            (A5 == 5), assert(fact(Cliente5)), resultado).
+            (A5 == 2), assert(fact(Cliente2)), questao3;
+	    (A5 == 3), assert(fact(Cliente3)), questao3;
+	    (A5 == 4), assert(fact(Cliente4)), questao3;
+            (A5 == 5), assert(fact(Cliente5)), questao3.
 			
 questao3:- 	write('********************************************************************************************************'), nl,
 			write('**  Qual dos seguintes metodos de procura prefere?'), nl, 
       		write('**  1 - depthfirst'), nl,
 			write('**  2 - iterativedeepening'), nl, 
-			write('**  3 - breadthfirst.pl'),nl,
+			write('**  3 - breadthfirst'),nl,
 			write('**'),nl,nl,			
 			read(A6),
 			(
-			(A6 == 1), assert(fact(gluten)), resultado;
-            (A6 == 2), assert(fact(lactose)), resultado;
-            (A6 == 3), assert(fact(nenhuma)), resultado).
+			(A6 == 1), assert(fact(depthfirst)), resultado;
+            (A6 == 2), assert(fact(iterativedeepening)), resultado;
+            (A6 == 3), assert(fact(breadthfirst)), resultado).
 			
 			
 resultado :- 	write('********************************************************************************************************'), nl,
