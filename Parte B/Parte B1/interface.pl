@@ -51,10 +51,10 @@ questao2:-	write('**************************************************************
             (A5 == 5), assert(fact(Cliente5)), resultado).
 			
 questao3:- 	write('********************************************************************************************************'), nl,
-			write('**  Tem alguma alergia? Das seguintes, introduza a correspondente:'), nl, 
-      		write('**  1 - gluten'), nl,
-			write('**  2 - lactose'), nl, 
-			write('**  3 - nenhuma'),nl,
+			write('**  Qual dos seguintes metodos de procura prefere?'), nl, 
+      		write('**  1 - depthfirst'), nl,
+			write('**  2 - iterativedeepening'), nl, 
+			write('**  3 - breadthfirst.pl'),nl,
 			write('**'),nl,nl,			
 			read(A6),
 			(
