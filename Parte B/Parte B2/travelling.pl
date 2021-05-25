@@ -1,29 +1,19 @@
-% traveling salesman problem (TSP): minimize distance to visit all clients
+% traveling salesman problem (TSP): minimize distance to visit all cities
 :-[auxiliar,hill].
 
 % north cost region of Portugal:
-% driving distance (in min), from: https://pt.distance.to
+% driving distance (in km), from: https://pt.distance.to
+dist(restaurante,cliente1,5).
+dist(restaurante,cliente4,7).
+dist(cliente1,cliente4,5).
 dist(cliente1,cliente2,5).
-dist(cliente1,cliente3,35.8).
-dist(cliente1,cliente4,59.61).
-dist(cliente1,cliente5,55.74).
-dist(cliente2,viana,75.48).
-dist(porto,valenca,114.88).
-dist(varzim,famalicao,31.39).
-dist(varzim,barcelos,21.34).
-dist(varzim,braga,38.88).
-dist(varzim,viana,41.44).
-dist(varzim,valenca,85.35).
-dist(famalicao,barcelos,21.45).
-dist(famalicao,braga,24.76).
-dist(famalicao,viana,69.89).
-dist(famalicao,valenca,83.91).
-dist(barcelos,braga,25.79).
-dist(barcelos,viana,39.42).
-dist(barcelos,valenca,68.48).
-dist(braga,viana,62.46).
-dist(braga,valenca,67.19).
-dist(viana,valenca,52.26).
+dist(cliente1,cliente5,5).
+dist(cliente4,cliente2,2).
+dist(cliente2,cliente5,2).
+dist(cliente2,cliente3,3).
+dist(cliente5,cliente3,5).
+dist(cliente3,cliente4,4).
+
 travel(X,Y,D):-dist(Y,X,D);dist(X,Y,D). % true if dist or symmetrical
 
 % representation: S is a list of cities
@@ -72,7 +62,7 @@ change(S1,L,L,S2):- % P1 is L
 	replace_list(S12,1,City2,S2). % last
 
 % initial solution: lets start with a bad solution:
-initial([porto,viana,famalicao,valenca,varzim,braga,barcelos,porto]).
+initial([restaurante,cliente1,cliente4,cliente2,cliente3]).
 
 :- set_random(seed(12345)). % set initial random seed
 
