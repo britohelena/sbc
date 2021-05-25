@@ -3,11 +3,11 @@
 
 % north cost region of Portugal:
 % driving distance (in km), from: https://pt.distance.to
-dist(porto,varzim,36.99).
-dist(porto,famalicao,35.8).
-dist(porto,barcelos,59.61).
-dist(porto,braga,55.74).
-dist(porto,viana,75.48).
+dist(cliente1,cliente2,36.99).
+dist(cliente1,cliente3,35.8).
+dist(cliente1,cliente4,59.61).
+dist(cliente1,cliente5,55.74).
+dist(cliente2,viana,75.48).
 dist(porto,valenca,114.88).
 dist(varzim,famalicao,31.39).
 dist(varzim,barcelos,21.34).
