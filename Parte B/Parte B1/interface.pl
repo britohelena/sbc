@@ -1,5 +1,5 @@
 :-dynamic(fact/1),
-[depthfirst, Solucao1, Solucao2, breadthfirst].
+[Solucao1,depthfirst, Solucao2, breadthfirst].
 
 menu:- nl,nl , 	write('********************************************************************************************************'), nl,
 				write('           Seja Bem vindo! Antes de iniciar, qual o seu nome?'),nl,
@@ -31,7 +31,7 @@ questao1:-	write('**************************************************************
 			read(A4),
 			(
 			(A4 == 1), assert(fact(1Encomenda)), questao2;
-            (A4 == 2), assert(fact(2Encomendas)), questao2.
+            (A4 == 2), assert(fact(2Encomendas)), questao4.
             
 
 questao2:-	write('********************************************************************************************************'), nl,
@@ -45,22 +45,43 @@ questao2:-	write('**************************************************************
 			read(A5),
 			(
 			(A5 == 1), assert(fact(Cliente1)), resultado;
-            (A5 == 2), assert(fact(Cliente2)), resultado;
-	    (A5 == 3), assert(fact(Cliente3)), resultado;
-	    (A5 == 4), assert(fact(Cliente4)), resultado;
-            (A5 == 5), assert(fact(Cliente5)), resultado).
+            (A5 == 2), assert(fact(Cliente2)), questao3;
+	    (A5 == 3), assert(fact(Cliente3)), questao3;
+	    (A5 == 4), assert(fact(Cliente4)), questao3;
+            (A5 == 5), assert(fact(Cliente5)), questao3.
+	 
+questao4:-	write('********************************************************************************************************'), nl,
+			write('**  Quais são os seus destinos?'), nl,
+			write('**'),nl,
+			write('**  1 - Cliente1 e Cliente2'), nl,
+			write('**  2 - Cliente1 e Cliente3'), nl, 
+			write('**  3 - Cliente1 e Cliente4'),nl,
+			write('**  4 - Cliente1 e Cliente5'),nl,
+			write('**  5 - Cliente2 e Cliente3'),nl,
+			write('**  6 - Cliente2 e Cliente4'),nl,
+			write('**  7 - Cliente2 e Cliente5'),nl,
+			write('**  8 - Cliente3 e Cliente4'),nl,
+			write('**  9 - Cliente3 e Cliente5'),nl,
+			write('**  10 - Cliente4 e Cliente5'),nl,
+			read(A5),
+			(
+			(A5 == 1), assert(fact(Cliente1)), resultado;
+            (A5 == 2), assert(fact(Cliente2)), questao3;
+	    (A5 == 3), assert(fact(Cliente3)), questao3;
+	    (A5 == 4), assert(fact(Cliente4)), questao3;
+            (A5 == 5), assert(fact(Cliente5)), questao3.
 			
 questao3:- 	write('********************************************************************************************************'), nl,
-			write('**  Tem alguma alergia? Das seguintes, introduza a correspondente:'), nl, 
-      		write('**  1 - gluten'), nl,
-			write('**  2 - lactose'), nl, 
-			write('**  3 - nenhuma'),nl,
+			write('**  Qual dos seguintes metodos de procura prefere?'), nl, 
+      		write('**  1 - depthfirst'), nl,
+			write('**  2 - iterativedeepening'), nl, 
+			write('**  3 - breadthfirst'),nl,
 			write('**'),nl,nl,			
 			read(A6),
 			(
-			(A6 == 1), assert(fact(gluten)), resultado;
-            (A6 == 2), assert(fact(lactose)), resultado;
-            (A6 == 3), assert(fact(nenhuma)), resultado).
+			(A6 == 1), assert(fact(depthfirst)), resultado;
+            (A6 == 2), assert(fact(iterativedeepening)), resultado;
+            (A6 == 3), assert(fact(breadthfirst)), resultado).
 			
 			
 resultado :- 	write('********************************************************************************************************'), nl,
@@ -71,8 +92,9 @@ resultado :- 	write('***********************************************************
 				result.
 
 resultadowrite(P):-	fact(A6),nl,
-					write('     O seu perfil e o'),nl,
-					write('     *** '),write(P),write(' ***'),nl,nl,
-					write('     Rotas possíveis: '),perfil(P),nl,nl,
+					write('     A rota e '),write(S),write(' ***'),nl,
+					write('     Tem: '),write(N1),write(' steps'), nl,
+					write('     Distancia: '),write(D),nl,
+					write('     Lucro: '),write(L),nl,
 					write('********************************************************************************************************'),
 					retractall(fact(_)).
