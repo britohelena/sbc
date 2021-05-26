@@ -45,7 +45,7 @@ run(Method):- search(Method,Par,S),
 	      write('method:'),write(Method),writepar(Par),nl,
               write('solution:'),write(S),nl,
 	      length(S,N),N1 is N-1,write('solution steps:'),write(N1),nl,
-              eval(S,D),write('Distancia:'),write(D),nl,goal(A),lucro(A,L),
+              eval(S,D),write('Tempo:'),write(D),nl,goal(A),lucro(A,L),
 			  write("Lucro: "), write(L).
 % write parameter (if any):
 writepar(X):- integer(X),write(' par:'),write(X). % write X
