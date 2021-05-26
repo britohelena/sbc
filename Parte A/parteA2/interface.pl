@@ -70,7 +70,7 @@ resultado :- 	write('***********************************************************
 resultadowrite(P):-	fact(A6),nl,
 					write('     O seu perfil e o'),nl,
 					write('     *** '),write(P),write(' ***'),nl,nl,
-					write('     Pratos aconselhados: '),solucao(P),nl,nl,
+					write('     Pratos aconselhados: '),perfil(P),nl,nl,
 					write('********************************************************************************************************'),
 					retractall(fact(_)).
 
