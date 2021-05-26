@@ -5,7 +5,7 @@ solucao(carnivora,entrada,gluten,['Bruschetta de tomates, tem um gostinho especi
 
 solucao(carnivora,entrada,lactose,['Tartare de salmao cozido, prato originario dos Tartaros OU Palitos de beringela.']).
 
-solucao(carnivora,entrada,nenhuma,['Sopa fria de tomate, fica bem com qualquer prato que venha a seguir OU Gaspacho à alentejana, um prato fresco para servir nos dias quentes.']). 
+solucao(carnivora,entrada,nenhuma,['Sopa fria de tomate, fica bem com qualquer prato que venha a seguir OU Gaspacho a alentejana, um prato fresco para servir nos dias quentes.']). 
 
 solucao(carnivora,principal,gluten,['Cannelloni Gratinado de Presunto Parma, Pesto e Mozzarela de Bufalo OU Lasanha de Bacalhau com Molho Branco.']).
 
